@@ -1,0 +1,853 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 30px;
+    }
+
+
+    .carousel .swiper-button-next,
+    .carousel .swiper-button-prev
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+    .carousel .swiper-button-next .icon,
+    .carousel .swiper-button-prev .icon
+    {
+        width: 22px;
+        height: 17px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 32px 16px;
+    }
+
+
+    .fancybox__content > .carousel__button.is-close
+    {
+        top: 12px;
+        right: 12px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head
+    {
+        padding: 15px 65px 15px 19px;
+    }
+
+
+    .accordion_item .head .title
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+    .accordion_item .data
+    {
+        padding: 0 19px 15px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .logo img
+    {
+        width: 140px;
+    }
+
+
+    header .socials a,
+    header .phone .icon,
+    header .email .icon
+    {
+        width: 32px;
+        height: 32px;
+    }
+
+    header .socials .vk_link .icon
+    {
+        width: 20px;
+        height: 12px;
+    }
+
+    header .phone .icon svg
+    {
+        width: 15px;
+        height: 16px;
+    }
+
+    header .email .icon svg
+    {
+        width: 15px;
+        height: 12px;
+    }
+
+
+    header .mob_menu_btn
+    {
+        width: 28px;
+        margin-left: 16px;
+    }
+
+
+    header .mob_menu_btn span
+    {
+        height: 2px;
+    }
+
+    header .mob_menu_btn span:before
+    {
+        top: -10px;
+    }
+
+    header .mob_menu_btn span:after
+    {
+        top: 10px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 32px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+    .form .line
+    {
+        margin-bottom: 16px;
+    }
+
+
+    .form .bottom
+    {
+        padding-top: 8px;
+    }
+
+
+    .form .submit
+    {
+        width: 100%;
+    }
+
+    .form .submit_btn
+    {
+        width: 100%;
+        height: 48px;
+        padding: 0 24px;
+    }
+
+
+    .form .agree
+    {
+        font-size: 12px;
+        line-height: 18px;
+
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h3
+    {
+        font-size: 22px;
+    }
+
+
+    .text_block blockquote
+    {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .data
+    {
+        padding-bottom: 60%;
+    }
+
+
+    .main_slider .title
+    {
+        font-size: 48px;
+    }
+
+
+    .main_slider .desc
+    {
+        font-size: 21px;
+    }
+
+
+
+    /*----------------
+        Directions
+    ----------------*/
+    .directions .block_head
+    {
+        margin-bottom: 28px;
+    }
+
+
+    .directions .row
+    {
+        margin-bottom: -32px;
+    }
+
+
+    .directions .item
+    {
+        display: block;
+
+        width: 50%;
+        margin-bottom: 32px;
+
+        text-align: center;
+    }
+
+
+    .directions .item .icon
+    {
+        width: 100%;
+        height: 80px;
+        margin: 0 0 8px;
+    }
+
+    .directions .item .icon + *
+    {
+        width: 100%;
+    }
+
+
+
+    /*-----------------
+        About block
+    -----------------*/
+    .about_block .video_link .btn
+    {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        width: 56px;
+        height: 40px;
+        margin: auto;
+    }
+
+    .about_block .video_link .btn span
+    {
+        display: none;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+
+    /*----------------
+        Categories
+    ----------------*/
+    .categories .items
+    {
+        font-size: 24px;
+    }
+
+
+
+    /*----------------
+        Our_rating
+    ----------------*/
+    .our_rating .grid
+    {
+        display: block;
+    }
+
+    .our_rating .grid > * + *
+    {
+        margin-top: 24px;
+    }
+
+
+    .our_rating .discount .percents
+    {
+        display: block;
+    }
+
+
+
+    /*---------------
+        Get price
+    ---------------*/
+    .get_price .data
+    {
+        padding-bottom: 120px;
+    }
+
+
+    .get_price .image,
+    .get_price .data:after
+    {
+        height: 120px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .images
+    {
+        margin-bottom: 36px;
+    }
+
+
+    .contacts_info .data .title
+    {
+        font-size: calc(var(--font_size_title) - 10px);
+        line-height: calc(100% + 6px);
+    }
+
+
+
+    /*-----------
+        Areas
+    -----------*/
+    .areas .swiper-button-next,
+    .areas .swiper-button-prev
+    {
+        top: -72px;
+    }
+
+    .areas .swiper-button-prev
+    {
+        right: 48px;
+    }
+
+
+    .areas .video_link .btn
+    {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        width: 56px;
+        height: 40px;
+        margin: auto;
+    }
+
+    .areas .video_link .btn span
+    {
+        display: none;
+    }
+
+
+    .areas .premises
+    {
+        font-size: 13px;
+        line-height: 19px;
+
+        margin-left: -10px;
+    }
+
+    .areas .premises > *
+    {
+        margin-left: 10px;
+    }
+
+
+    .areas .features > * + *
+    {
+        margin-top: 8px;
+    }
+
+    .areas .features .name
+    {
+        width: 100%;
+        padding: 0;
+    }
+
+    .areas .features .val
+    {
+        width: 100%;
+    }
+
+
+    .areas .tags > *
+    {
+        line-height: 16px;
+
+        padding: 8px 12px;
+    }
+
+
+    .areas .order_btn
+    {
+        width: 100%;
+        padding: 12px 20px;
+    }
+
+
+    .areas .details_btn
+    {
+        width: 100%;
+        padding: 10px 19px;
+    }
+
+
+
+    /*------------
+        Banner
+    ------------*/
+    .banner .cont
+    {
+        padding: 0;
+    }
+
+
+    .banner .info
+    {
+        padding: 32px 24px 40px;
+    }
+
+
+
+    /*--------------
+        Projects
+    --------------*/
+    .projects .project .name
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*-------------
+        Clients
+    -------------*/
+    .clients .swiper
+    {
+        margin-bottom: 24px;
+    }
+
+    .clients .swiper:after
+    {
+        bottom: -24px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .review
+    {
+        padding: 23px 19px 19px;
+
+        background-position: calc(100% - 19px) 19px;
+    }
+
+
+    .reviews .review .logo
+    {
+        padding: 0 56px;
+    }
+
+
+
+    /*----------------
+        About head
+    ----------------*/
+    .about_head .data
+    {
+        min-height: 200px;
+    }
+
+
+    .about_head .data .title span
+    {
+        font-size: calc(var(--font_size_title) + 8px);
+
+        margin-top: 4px;
+    }
+
+
+
+    /*----------------
+        Info block
+    ----------------*/
+    .info_block .item .thumb
+    {
+        width: 100%;
+        height: auto;
+        margin-bottom: 28px;
+        padding-bottom: 75%;
+
+        order: 1;
+    }
+
+    .info_block .item .thumb + *,
+    .info_block .item:nth-child(2n) .thumb + *
+    {
+        width: 100%;
+
+        order: 2;
+    }
+
+
+
+    /*-----------------
+        About stats
+    -----------------*/
+    .about_stats .video_link .btn
+    {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        width: 56px;
+        height: 40px;
+        margin: auto;
+    }
+
+    .about_stats .video_link .btn span
+    {
+        display: none;
+    }
+
+
+
+    /*------------
+        Events
+    ------------*/
+    .events .data .title
+    {
+        font-size: calc(var(--font_size_title) - 8px);
+        line-height: calc(100% + 4px);
+    }
+
+
+    .events .sub
+    {
+        display: block;
+
+        column-gap: 24px;
+        column-rule: 1px solid #ff895a;
+        column-count: 2;
+    }
+
+    .events .sub > *
+    {
+        transform: translateZ(0);
+
+        --webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    .events .sub > * + *
+    {
+        margin-top: 8px;
+    }
+
+    .events .sub .sep
+    {
+        display: none;
+    }
+
+
+
+    /*-------------
+        Letters
+    -------------*/
+    .letters .data
+    {
+        padding: 48px 24px;
+    }
+
+
+    .letters .item
+    {
+        padding-bottom: 104%;
+    }
+
+
+
+    /*------------------
+        Slider block
+    ------------------*/
+    .slider_block .data
+    {
+        height: 300px;
+        padding: 40px 24px;
+    }
+
+
+    .slider_block .title
+    {
+        font-size: 48px;
+    }
+
+
+
+    /*-----------------
+        Video block
+    -----------------*/
+    .video_block .title
+    {
+        font-size: calc(var(--font_size_title) - 4px);
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .faq .block_title
+    {
+        font-size: 19px;
+        line-height: calc(100% + 6px);
+
+        margin-bottom: 28px;
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form .title
+    {
+        font-size: calc(var(--font_size_title) - 6px);
+    }
+
+
+
+    /*---------------------
+        Thematic design
+    ---------------------*/
+    .thematic_design .item .name
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+    .thematic_design .hr
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .data
+    {
+        padding-bottom: 72px;
+    }
+
+
+    footer .socials
+    {
+        width: 100%;
+        margin-top: 8px;
+        margin-left: 0;
+    }
+
+
+    footer .creator
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding: 40px 24px;
+    }
+
+
+
+    .booking_modal .data
+    {
+        margin-top: 28px;
+    }
+
+
+    .booking_modal .area_name
+    {
+        font-size: 19px;
+        line-height: 25px;
+
+        width: 100%;
+    }
+
+    .booking_modal .discount
+    {
+        margin-top: 8px;
+        margin-left: 0;
+    }
+
+
+
+    .project_modal .info
+    {
+        display: block;
+
+        text-align: center;
+    }
+
+    .project_modal .info > *
+    {
+        width: 100%;
+        margin: 0;
+    }
+
+
+    .project_modal .direction + .sep,
+    .project_modal .info .sep
+    {
+        display: block;
+
+        width: 20px;
+        height: 1px;
+        margin: 8px auto;
+    }
+
+
+
+    .quiz_modal .contacts_data
+    {
+        width: calc(100% + 48px);
+        margin: 40px -24px -40px;
+    }
+
+
+    .quiz_modal .contacts_data .title
+    {
+        font-size: calc(var(--font_size_title) - 8px);
+    }
+
+
+    .quiz_modal .location > *
+    {
+        width: 100%;
+    }
+
+
+    .quiz_modal .submit
+    {
+        padding-top: 1px;
+    }
+
+    .quiz_modal .form .submit_btn
+    {
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+
+    #quiz_finish_modal .form .back_btn
+    {
+        top: 0;
+        bottom: auto;
+    }
+
+    #quiz_finish_modal .form .submit_btn
+    {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+    .quiz_modal .form.step3,
+    .quiz_modal .form.step4
+    {
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 0 24px;
+    }
+
+
+
+    .band_modal
+    {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+
+    .band_modal .head .name
+    {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+
+    .band_modal .video_link .thumb .icon
+    {
+        width: 80px;
+        height: 80px;
+    }
+
+    .band_modal .video_link .thumb .icon svg
+    {
+        width: 28px;
+    }
+}
