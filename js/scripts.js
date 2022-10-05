@@ -1128,16 +1128,16 @@ $(() => {
 
 
 	// Отправка форм
-	$('.modal .form').submit(function (e) {
-		e.preventDefault()
+	// $('.modal .form').submit(function (e) {
+	// 	e.preventDefault()
 
-		Fancybox.close()
+	// 	Fancybox.close()
 
-		Fancybox.show([{
-			src: '#success_modal',
-			type: 'inline'
-		}])
-	})
+	// 	Fancybox.show([{
+	// 		src: '#success_modal',
+	// 		type: 'inline'
+	// 	}])
+	// })
 
 
 	// Видео
