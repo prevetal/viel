@@ -306,7 +306,19 @@
     ----------------*/
     .our_rating .grid
     {
-        display: block;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .our_rating .grid > *
+    {
+        order: 2;
+    }
+
+    .our_rating .grid > *:nth-child(3) ~ *
+    {
+        display: none;
     }
 
     .our_rating .grid > * + *
@@ -314,6 +326,13 @@
         margin-top: 24px;
     }
 
+
+    .our_rating .grid > *.discount
+    {
+        display: block;
+
+        order: 1;
+    }
 
     .our_rating .discount .percents
     {
@@ -697,6 +716,18 @@
     }
 
 
+    footer .menu,
+    footer .menu + .menu
+    {
+        width: calc(50% - 10px);
+    }
+
+    footer .menu a
+    {
+        font-size: 13px;
+    }
+
+
     footer .socials
     {
         width: 100%;
@@ -746,9 +777,15 @@
 
 
 
+    .project_modal
+    {
+        padding: 0;
+    }
+
+
     .project_modal .info
     {
-        display: block;
+        display: none;
 
         text-align: center;
     }

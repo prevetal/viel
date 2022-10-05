@@ -1174,11 +1174,14 @@
     }
 
 
-    .video_block .image
+    .video_block .image,
+    .video_block .info + .image
     {
         width: 600px;
         margin-right: auto;
         margin-left: auto;
+
+        order: 2;
     }
 
 

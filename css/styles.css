@@ -6535,10 +6535,16 @@ header .mob_menu_btn span:after
     display: block;
 
     width: calc(50% + 59px);
-    margin-right: -104px;
-    margin-left: auto;
+    margin-right: auto;
+    margin-left: -104px;
 
     text-decoration: none;
+}
+
+.video_block .info + .image
+{
+    margin-right: -104px;
+    margin-left: auto;
 }
 
 .video_block .image:before
@@ -7822,9 +7828,9 @@ footer .creator a:hover span
     position: absolute;
     z-index: 20;
     top: 0;
-    left: 0;
+    left: -58px;
 
-    width: 100%;
+    width: calc(100% + 116px);
     height: 100%;
 
     object-fit: cover;

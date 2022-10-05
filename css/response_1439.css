@@ -1005,7 +1005,13 @@
     .video_block .image
     {
         width: calc(50% + 32px);
+        margin-left: -60px;
+    }
+
+    .video_block .info + .image
+    {
         margin-right: -60px;
+        margin-left: auto;
     }
 
 
@@ -1122,6 +1128,13 @@
         width: calc(100% + 100px);
         margin: 50px -50px -50px;
         padding: 50px;
+    }
+
+    .quiz_modal .contacts_data .bg
+    {
+        left: 0;
+
+        width: 100%;
     }
 
 

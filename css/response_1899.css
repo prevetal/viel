@@ -1056,7 +1056,13 @@
     .video_block .image
     {
         width: calc(50% + 48px);
+        margin-left: -80px;
+    }
+
+    .video_block .info + .image
+    {
         margin-right: -80px;
+        margin-left: auto;
     }
 
 

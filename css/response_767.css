@@ -270,6 +270,11 @@
         flex-wrap: wrap;
     }
 
+    .directions .item:last-child
+    {
+        display: none;
+    }
+
 
     .directions .item .icon
     {
@@ -960,6 +965,27 @@
     }
 
 
+    footer .menu,
+    footer .menu + .menu
+    {
+        line-height: 20px;
+
+        display: block;
+
+        margin-top: 32px;
+    }
+
+    footer .menu > * + *
+    {
+        margin-top: 10px;
+    }
+
+    footer .menu + .menu
+    {
+        margin-left: auto;
+    }
+
+
     footer .copyright
     {
         font-size: 13px;
@@ -991,6 +1017,12 @@
 
         margin-top: 24px;
     }
+
+    footer .location br
+    {
+        display: none;
+    }
+
 
     footer .email a
     {
@@ -1060,6 +1092,26 @@
 
 
 
+    .project_modal
+    {
+        padding: 0;
+    }
+
+    .project_modal .block_head,
+    .project_modal .info,
+    .project_modal .desc
+    {
+        display: none;
+    }
+
+
+    .project_modal + .carousel__button.is-close
+    {
+        top: 12px;
+        right: 12px;
+    }
+
+
     .project_modal .direction
     {
         width: 100%;
@@ -1078,8 +1130,15 @@
     }
 
 
+    .project_modal .gallery
+    {
+        margin: 0;
+    }
+
     .project_modal .gallery .thumbs
     {
+        display: none;
+
         margin-bottom: -12px;
         margin-left: -12px;
     }

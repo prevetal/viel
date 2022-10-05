@@ -820,6 +820,18 @@ $(() => {
 		$('header .mob_menu_btn').toggleClass('active')
 		$('body').toggleClass('menu_open')
 		$('header .menu').toggleClass('show')
+
+		if (is_touch_device()) $('body').css('cursor', 'pointer')
+	})
+
+	$(document).click(e => {
+		if ($(e.target).closest('.menu.show, .mob_menu_btn').length === 0 && $('body').hasClass('menu_open')) {
+			$('header .mob_menu_btn').removeClass('active')
+			$('body').removeClass('menu_open')
+			$('header .menu').removeClass('show')
+
+			if (is_touch_device()) $('body').css('cursor', 'default')
+		}
 	})
 
 
@@ -908,7 +920,7 @@ $(() => {
 						watchSlidesProgress: true,
 						slideActiveClass: 'active',
 						slideVisibleClass: 'visible',
-						spaceBetween: 24,
+						spaceBetween: 0,
 						slidesPerView: 1,
 						preloadImages: false,
 						lazy: {
