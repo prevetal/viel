@@ -624,7 +624,17 @@ $(() => {
 				checkInView: true,
 				loadOnTransitionStart: true,
 				loadPrevNext: true
-			}
+			},
+			effect: "creative",
+			creativeEffect: {
+				prev: {
+					shadow: true,
+					translate: [0, 0, -400],
+				},
+				next: {
+					translate: ["100%", 0, 0],
+				},
+			},
 		})
 	}
 
@@ -914,7 +924,24 @@ $(() => {
 		on: {
 			reveal: () => {
 				if ($('.project_modal .gallery .swiper').length) {
-					const projectSlider = new Swiper('.project_modal .gallery .swiper', {
+					const projectThumbs = new Swiper('.project_modal .gallery .thumbs .swiper', {
+						loop: false,
+						speed: 500,
+						watchSlidesProgress: true,
+						slideActiveClass: 'active',
+						slideVisibleClass: 'visible',
+						slidesPerView: 7,
+						breakpoints: {
+							768: {
+								spaceBetween: 16
+							},
+							1440: {
+								spaceBetween: 24
+							}
+						},
+					})
+
+					const projectSlider = new Swiper('.project_modal .gallery .big .swiper', {
 						loop: false,
 						speed: 500,
 						watchSlidesProgress: true,
@@ -922,27 +949,9 @@ $(() => {
 						slideVisibleClass: 'visible',
 						spaceBetween: 0,
 						slidesPerView: 1,
-						preloadImages: false,
-						lazy: {
-							enabled: true,
-							checkInView: true,
-							loadOnTransitionStart: true,
-							loadPrevNext: true
-						},
-						on: {
-							slideChange: swiper => {
-								setTimeout(() => {
-									$('.project_modal .gallery .thumbs button').removeClass('active')
-									$('.project_modal .gallery .thumbs button').eq(swiper.activeIndex).addClass('active')
-								})
-							}
+						thumbs: {
+							swiper: projectThumbs
 						}
-					})
-
-					$('.project_modal .gallery .thumbs button').click(function (e) {
-						e.preventDefault()
-
-						projectSlider.slideTo($(this).data('slide-index'), 500)
 					})
 				}
 

@@ -811,15 +811,6 @@
     .project_modal .gallery .thumbs
     {
         margin-top: 20px;
-        margin-bottom: -16px;
-        margin-left: -16px;
-    }
-
-    .project_modal .gallery .thumbs > *
-    {
-        width: calc(14.285% - 16px);
-        margin-bottom: 16px;
-        margin-left: 16px;
     }
 
 

@@ -7315,6 +7315,7 @@ footer .creator a:hover span
 .project_modal
 {
     display: inline-block;
+    overflow: hidden;
 }
 
 
@@ -7422,23 +7423,35 @@ footer .creator a:hover span
 
 .project_modal .gallery .thumbs
 {
-    display: flex;
-
     margin-top: 25px;
-    margin-bottom: -24px;
-    margin-left: -24px;
-
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
-.project_modal .gallery .thumbs > *
+
+.project_modal .gallery .thumbs .swiper
 {
-    width: calc(14.285% - 24px);
-    margin-bottom: 24px;
-    margin-left: 24px;
+    overflow: visible !important;
+}
+
+
+.project_modal .gallery .thumbs .swiper-slide
+{
+    position: relative;
+
+    visibility: hidden;
+
+    transition: opacity .2s linear, visibility .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+.project_modal .gallery .thumbs .swiper-slide.visible
+{
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
 }
 
 
@@ -7493,7 +7506,7 @@ footer .creator a:hover span
     border-color: #e2e2e2;
 }
 
-.project_modal .gallery .thumbs button.active:after
+.project_modal .gallery .thumbs .swiper-slide-thumb-active button:after
 {
     border-color: #ff895a;
 }

@@ -1138,16 +1138,6 @@
     .project_modal .gallery .thumbs
     {
         display: none;
-
-        margin-bottom: -12px;
-        margin-left: -12px;
-    }
-
-    .project_modal .gallery .thumbs > *
-    {
-        width: calc(25% - 12px);
-        margin-bottom: 12px;
-        margin-left: 12px;
     }
 
 
