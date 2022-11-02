@@ -858,19 +858,19 @@
 
     .slider_block .data
     {
-        height: 320px;
+        height: 400px;
         padding: 40px;
     }
 
 
     .slider_block .title
     {
-        font-size: 56px;
+        font-size: 29px;
     }
 
     .slider_block .sub_title
     {
-        font-size: 22px;
+        font-size: 16px;
     }
 
 

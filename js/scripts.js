@@ -625,16 +625,11 @@ $(() => {
 				loadOnTransitionStart: true,
 				loadPrevNext: true
 			},
-			effect: "creative",
-			creativeEffect: {
-				prev: {
-					shadow: true,
-					translate: [0, 0, -400],
-				},
-				next: {
-					translate: ["100%", 0, 0],
-				},
-			},
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false,
+				waitForTransition: false
+			}
 		})
 	}
 
@@ -947,8 +942,12 @@ $(() => {
 						watchSlidesProgress: true,
 						slideActiveClass: 'active',
 						slideVisibleClass: 'visible',
-						spaceBetween: 0,
+						spaceBetween: 24,
 						slidesPerView: 1,
+						navigation: {
+							nextEl: '.swiper-button-next',
+							prevEl: '.swiper-button-prev'
+						},
 						thumbs: {
 							swiper: projectThumbs
 						}

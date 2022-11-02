@@ -687,21 +687,19 @@
     ------------------*/
     .slider_block .data
     {
-        height: 360px;
-        padding: 40px 60px;
+        height: 400px;
+        padding: 40px 80px;
     }
 
 
     .slider_block .title
     {
-        font-size: 64px;
+        font-size: 33px;
     }
 
     .slider_block .sub_title
     {
-        font-size: 24px;
-
-        margin-top: 4px;
+        font-size: 17px;
     }
 
 

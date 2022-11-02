@@ -6393,8 +6393,6 @@ header .mob_menu_btn span:after
 
     text-align: center;
 
-    background: #ddd;
-
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -6415,7 +6413,7 @@ header .mob_menu_btn span:after
 
     content: '';
 
-    opacity: .3;
+    opacity: 0;
     background: #3a54ba;
 }
 
@@ -6437,24 +6435,80 @@ header .mob_menu_btn span:after
 .slider_block .title
 {
     font-family: var(--font_family2);
-    font-size: 100px;
+    font-size: 58px;
     line-height: 100%;
 
-    width: 100%;
+    width: 1280px;
+    max-width: 100%;
+    margin: 0 auto;
 
     text-transform: uppercase;
+
+    opacity: 0;
 }
 
 
 .slider_block .sub_title
 {
     font-family: var(--font_family2);
-    font-size: 40px;
+    font-size: 28px;
     font-weight: 600;
     line-height: 100%;
 
-    width: 100%;
-    margin-top: 8px;
+    width: 840px;
+    max-width: 100%;
+    margin-top: 20px;
+
+    opacity: 0;
+}
+
+.slider_block .active .title,
+.slider_block .active .sub_title
+{
+    animation-name: opacity;
+    animation-duration: 3s;
+    animation-delay: 4s;
+
+    opacity: 1;
+
+    animation-fill-mode: forwards;
+}
+
+.slider_block .active .data:after
+{
+    animation-name: opacity2;
+    animation-duration: 3s;
+    animation-delay: 4s;
+
+    opacity: .9;
+
+    animation-fill-mode: forwards;
+}
+
+@keyframes opacity
+{
+    0%
+    {
+        opacity: 1;
+    }
+
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+@keyframes opacity2
+{
+    0%
+    {
+        opacity: .9;
+    }
+
+    100%
+    {
+        opacity: 0;
+    }
 }
 
 
@@ -7408,6 +7462,76 @@ footer .creator a:hover span
     width: 841px;
     max-width: 100%;
     margin: 40px auto 0;
+}
+
+
+.project_modal .gallery .big .swiper
+{
+    overflow: visible !important;
+}
+
+
+.project_modal .gallery .big .swiper-slide
+{
+    position: relative;
+
+    visibility: hidden;
+
+    transition: opacity .2s linear, visibility .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+.project_modal .gallery .big .swiper-slide.visible
+{
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+
+.project_modal .gallery .big .swiper-button-next,
+.project_modal .gallery .big .swiper-button-prev
+{
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    background: #ff895a;
+}
+
+.project_modal .gallery .big .swiper-button-prev
+{
+    left: -20px;
+}
+
+.project_modal .gallery .big .swiper-button-next
+{
+    right: -20px;
+}
+
+
+.project_modal .gallery .big .swiper-button-next .icon,
+.project_modal .gallery .big .swiper-button-prev .icon
+{
+    width: 18px;
+    height: 18px;
+
+    transform: rotate(-90deg);
+}
+
+.project_modal .gallery .big .swiper-button-prev .icon
+{
+    transform: rotate(90deg);
+}
+
+.project_modal .gallery .big .swiper-button-next:hover,
+.project_modal .gallery .big .swiper-button-prev:hover
+{
+    color: #fff;
 }
 
 

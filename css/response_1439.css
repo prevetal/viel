@@ -964,18 +964,18 @@
     .slider_block .data
     {
         height: 500px;
-        padding: 60px;
+        padding: 60px 80px;
     }
 
 
     .slider_block .title
     {
-        font-size: 84px;
+        font-size: 44px;
     }
 
     .slider_block .sub_title
     {
-        font-size: 32px;
+        font-size: 22px;
     }
 
 

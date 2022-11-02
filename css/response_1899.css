@@ -1015,18 +1015,18 @@
     .slider_block .data
     {
         height: 600px;
-        padding: 72px;
+        padding: 72px 96px;
     }
 
 
     .slider_block .title
     {
-        font-size: 92px;
+        font-size: 52px;
     }
 
     .slider_block .sub_title
     {
-        font-size: 36px;
+        font-size: 24px;
     }
 
 

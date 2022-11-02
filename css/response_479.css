@@ -645,14 +645,18 @@
     ------------------*/
     .slider_block .data
     {
-        height: 300px;
         padding: 40px 24px;
     }
 
 
     .slider_block .title
     {
-        font-size: 48px;
+        font-size: 27px;
+    }
+
+    .slider_block .sub_title
+    {
+        font-size: 15px;
     }
 
 
