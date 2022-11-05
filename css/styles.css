@@ -669,6 +669,50 @@ button
 
 
 
+/*---------------
+    Keyframes
+---------------*/
+@keyframes opacity
+{
+    0%
+    {
+        opacity: 1;
+    }
+
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+@keyframes opacity2
+{
+    0%
+    {
+        opacity: .9;
+    }
+
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+@keyframes opacity3
+{
+    0%
+    {
+        opacity: .53;
+    }
+
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+
+
 /*------------
     Header
 ------------*/
@@ -2324,7 +2368,7 @@ header .mob_menu_btn span:after
 
     content: '';
 
-    opacity: .53;
+    opacity: 0;
     background: #df5823;
 }
 
@@ -2358,6 +2402,8 @@ header .mob_menu_btn span:after
 
     text-align: center;
 
+    opacity: 0;
+
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -2386,6 +2432,29 @@ header .mob_menu_btn span:after
 
     width: 100%;
     margin-top: 8px;
+}
+
+
+.main_slider .active .info
+{
+    animation-name: opacity;
+    animation-duration: 3s;
+    animation-delay: 4s;
+
+    opacity: 1;
+
+    animation-fill-mode: forwards;
+}
+
+.main_slider .active .data:after
+{
+    animation-name: opacity3;
+    animation-duration: 3s;
+    animation-delay: 4s;
+
+    opacity: .53;
+
+    animation-fill-mode: forwards;
 }
 
 
@@ -6483,32 +6552,6 @@ header .mob_menu_btn span:after
     opacity: .9;
 
     animation-fill-mode: forwards;
-}
-
-@keyframes opacity
-{
-    0%
-    {
-        opacity: 1;
-    }
-
-    100%
-    {
-        opacity: 0;
-    }
-}
-
-@keyframes opacity2
-{
-    0%
-    {
-        opacity: .9;
-    }
-
-    100%
-    {
-        opacity: 0;
-    }
 }
 
 

@@ -29,6 +29,11 @@ $(() => {
 				checkInView: true,
 				loadOnTransitionStart: true,
 				loadPrevNext: true
+			},
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false,
+				waitForTransition: false
 			}
 		})
 	}
