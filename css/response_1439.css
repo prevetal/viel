@@ -233,15 +233,26 @@
     /*-----------------
         Main slider
     -----------------*/
-    .main_slider .title
+    .main_slider .data
     {
-        font-size: 84px;
+        height: 500px;
     }
 
 
+    .main_slider .info
+    {
+        padding: 60px 80px;
+    }
+
+
+    .main_slider .title
+    {
+        font-size: 44px;
+    }
+
     .main_slider .desc
     {
-        font-size: 32px;
+        font-size: 22px;
     }
 
 

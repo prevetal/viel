@@ -200,21 +200,20 @@
     /*-----------------
         Main slider
     -----------------*/
-    .main_slider .data
+    .main_slider .info
     {
-        padding-bottom: 60%;
+        padding: 40px 24px;
     }
 
 
     .main_slider .title
     {
-        font-size: 48px;
+        font-size: 27px;
     }
-
 
     .main_slider .desc
     {
-        font-size: 21px;
+        font-size: 15px;
     }
 
 

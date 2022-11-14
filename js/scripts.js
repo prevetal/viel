@@ -31,7 +31,7 @@ $(() => {
 				loadPrevNext: true
 			},
 			autoplay: {
-				delay: 10000,
+				delay: 9000,
 				disableOnInteraction: false,
 				waitForTransition: false
 			}
@@ -631,7 +631,7 @@ $(() => {
 				loadPrevNext: true
 			},
 			autoplay: {
-				delay: 10000,
+				delay: 9000,
 				disableOnInteraction: false,
 				waitForTransition: false
 			}

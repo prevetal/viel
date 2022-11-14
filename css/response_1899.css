@@ -291,17 +291,27 @@
     /*-----------------
         Main slider
     -----------------*/
+    .main_slider .data
+    {
+        height: 600px;
+    }
+
+
+    .main_slider .info
+    {
+        padding: 72px 96px;
+    }
+
+
     .main_slider .title
     {
-        font-size: 92px;
+        font-size: 52px;
     }
 
 
     .main_slider .desc
     {
-        font-size: 36px;
-
-        margin-top: 8px;
+        font-size: 24px;
     }
 
 

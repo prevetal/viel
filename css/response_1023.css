@@ -197,17 +197,26 @@
     /*-----------------
         Main slider
     -----------------*/
-    .main_slider .title
+    .main_slider .data
     {
-        font-size: 64px;
+        height: 400px;
     }
 
 
+    .main_slider .info
+    {
+        padding: 40px 80px;
+    }
+
+
+    .main_slider .title
+    {
+        font-size: 33px;
+    }
+
     .main_slider .desc
     {
-        font-size: 24px;
-
-        margin-top: 4px;
+        font-size: 17px;
     }
 
 

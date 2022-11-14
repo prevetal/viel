@@ -309,15 +309,20 @@
     /*-----------------
         Main slider
     -----------------*/
-    .main_slider .title
+    .main_slider .data
     {
-        font-size: 72px;
+        height: 440px;
     }
 
 
+    .main_slider .title
+    {
+        font-size: 40px;
+    }
+
     .main_slider .desc
     {
-        font-size: 28px;
+        font-size: 19px;
     }
 
 
@@ -1128,7 +1133,6 @@
     .slider_block .data
     {
         height: 440px;
-        padding: 60px 80px;
     }
 
 

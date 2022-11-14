@@ -225,21 +225,24 @@
 
     .main_slider .data
     {
-        padding-bottom: 50%;
+        height: 400px;
+    }
+
+
+    .main_slider .info
+    {
+        padding: 40px;
     }
 
 
     .main_slider .title
     {
-        font-size: 56px;
+        font-size: 29px;
     }
 
-
-    .main_slider .desc
+    .main_slider .sub_title
     {
-        font-size: 22px;
-
-        margin-top: 0;
+        font-size: 16px;
     }
 
 
